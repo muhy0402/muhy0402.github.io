@@ -436,12 +436,10 @@
           
             <p>之前面试实验室，所有实验室都会问到这个问题，可以说这个问题是学了循环和数组之后最基础的问题，今天deer就来回忆回忆</p>
 <p>#include &lt;stdio.h&gt;</p>
-<p>#include &lt;stdlib.h&gt;</p>
-<p>void main()</p>
-<p>{</p>
-<p>int i=0;</p>
-<p>int </p>
-<p>}</p>
+<p>int main()</p>
+<p>{
+    int i=0;<br>    int j=0,t=0;<br>    int a[5]={32,78,31,89,65};<br>    for(i=0;i&lt;5;i++)<br>    {<br>        for(j=0;j&lt;5-i-1;j++)<br>            if(a[j]&gt;a[j+1])<br>            {<br>                t=a[j];<br>                a[j]=a[j+1];<br>                a[j+1]=t;<br>            }<br>    }<br>    printf(“排序结果为：\n”);<br>    for(i=0;i&lt;5;i++)<br>        printf(“%d “,a[i]);<br>}</p>
+<p>冒泡排序法是一种简单的交换类排序方法，它是通过相邻的数据元素的交换，逐步将待排序序列变为有序序列的过程</p>
 
           
         
