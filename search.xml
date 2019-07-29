@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[while循环]]></title>
+    <url>%2F2019%2F07%2F29%2Fwhile%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[while循环使用时，可以不进入循环 例如： #include “stdio.h” void main() { int a; a=2; while(a&lt;2) { printf(“good\n”); a++; } printf(“a=2\n”); } 在该循环中，while循环不进入，即输出没有good. 在该程序中，输出只有a=2； while循环可认为是“当”，当while后的语句为真时才继续进入循环 使用关系运算符时，可以比较浮点数的大小，但是尽量使用&lt;和&gt;，当存储的数据为1/3时，3*1/3的结果为1.0，但如果把1/3表示成小数点后六位，最终的结果就为0.999999，不等于1，使用fabs()函数来比较浮点数大小，即fabs(a-b&gt;0.0001); 新的_Bool类型，类似于int型变量，_Bool型是C语言中布尔变量的类型名，但_Bool类型只能储存1（真）和0（假）。如果把非0变量数值赋给_Bool类型的变量，该变量会被设置为1.]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[简单的程序示例]]></title>
+    <url>%2F2019%2F07%2F18%2F%E7%AE%80%E5%8D%95%E7%9A%84%E7%A8%8B%E5%BA%8F%E7%A4%BA%E4%BE%8B%2F</url>
+    <content type="text"><![CDATA[刚开始学习C语言，大家一定有许多问题，程序设计是特别严谨的，一些小的错误就会导致无法输出，下面就给大家介绍一个小的程序。 #include &lt;stdio.h&gt; int main() { int num; //定义一个整型变量称为num num=1; //将1赋给num，即num的值为1 printf(“I am a student.\n”); //使用printf（）函数输出，\n起换行作用。 printf(“I love China.\n”); return 0; } 以上代码直接可在Visual C++上编译运行，在写代码时要注意空格位置的适当以及代码中的所有标点符号均为英文。//则代表注释行，//后的语句计算机将不识别。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[冒泡排序]]></title>
+    <url>%2F2019%2F06%2F16%2F%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[之前面试实验室，所有实验室都会问到这个问题，可以说这个问题是学了循环和数组之后最基础的问题，今天deer就来回忆回忆 #include &lt;stdio.h&gt; int main() { int i=0; int j=0,t=0; int a[5]={32,78,31,89,65}; for(i=0;i&lt;5;i++) { for(j=0;j&lt;5-i-1;j++) if(a[j]&gt;a[j+1]) { t=a[j]; a[j]=a[j+1]; a[j+1]=t; } } printf(“排序结果为：\n”); for(i=0;i&lt;5;i++) printf(“%d “,a[i]);} 冒泡排序法是一种简单的交换类排序方法，它是通过相邻的数据元素的交换，逐步将待排序序列变为有序序列的过程]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[第一篇博客]]></title>
+    <url>%2F2019%2F06%2F15%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[欢迎来到muhy0402的博客空间，第一次写博客还有些小紧张，在之后，我会不定时的在上面发表自己的小成果和看法，希望大家多多指教！]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F06%2F15%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
