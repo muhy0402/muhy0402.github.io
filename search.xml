@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[for循环]]></title>
+    <url>%2F2019%2F07%2F29%2Ffor%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[for循环也是一个可以不用进入循环语句的循环， 例如： #include “stdio.h” void main() { int num; for(num=1;num&gt;=6;num–) printf(“good\n”); printf(“num=1\n”); } 这个for循环不进入循环语句中，输出为num=1; for后的第一条语句是定义给变量赋初值亦或是使用printf()函数，在执行循环的其他部分之前，只对第一个表达式求值一次或者赋值一次。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[C语言逗号表达式]]></title>
     <url>%2F2019%2F07%2F29%2FC%E8%AF%AD%E8%A8%80%E9%80%97%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[逗号在C语言中有很多用处 定义变量类型时： int a,b,c; 定义了三个整型变量a,b,c; 逗号表达式从左向右计算，逗号左侧表达式所有的副作用都在逗号右侧表达式之前运算完成 ounces++,cost=ounces*FIRST_OZ 在该表达式中，先递增ounces,然后在第二个子表达式中使用ounces的新值。 在逗号表达式中，整个逗号表达式的值是右侧项的值 houseprice=249,500;相当于： houseprice=249; 500; houseprice=(249,500);相当于： houseprice=500;]]></content>

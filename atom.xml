@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-29T07:45:00.226Z</updated>
+  <updated>2019-07-29T09:01:16.615Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>for循环</title>
+    <link href="http://yoursite.com/2019/07/29/for%E5%BE%AA%E7%8E%AF/"/>
+    <id>http://yoursite.com/2019/07/29/for循环/</id>
+    <published>2019-07-29T08:22:29.790Z</published>
+    <updated>2019-07-29T09:01:16.615Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;for循环也是一个可以不用进入循环语句的循环，&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;#include “stdio.h”&lt;/p&gt;
+&lt;p&gt;void main()&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;int
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>C语言逗号表达式</title>
