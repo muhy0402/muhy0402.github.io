@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[C语言逗号表达式]]></title>
+    <url>%2F2019%2F07%2F29%2FC%E8%AF%AD%E8%A8%80%E9%80%97%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[逗号在C语言中有很多用处 定义变量类型时： int a,b,c; 定义了三个整型变量a,b,c; 逗号表达式从左向右计算，逗号左侧表达式所有的副作用都在逗号右侧表达式之前运算完成 ounces++,cost=ounces*FIRST_OZ 在该表达式中，先递增ounces,然后在第二个子表达式中使用ounces的新值。 在逗号表达式中，整个逗号表达式的值是右侧项的值 houseprice=249,500;相当于： houseprice=249; 500; houseprice=(249,500);相当于： houseprice=500;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[while循环]]></title>
     <url>%2F2019%2F07%2F29%2Fwhile%E5%BE%AA%E7%8E%AF%2F</url>
     <content type="text"><![CDATA[while循环使用时，可以不进入循环 例如： #include “stdio.h” void main() { int a; a=2; while(a&lt;2) { printf(“good\n”); a++; } printf(“a=2\n”); } 在该循环中，while循环不进入，即输出没有good. 在该程序中，输出只有a=2； while循环可认为是“当”，当while后的语句为真时才继续进入循环 使用关系运算符时，可以比较浮点数的大小，但是尽量使用&lt;和&gt;，当存储的数据为1/3时，3*1/3的结果为1.0，但如果把1/3表示成小数点后六位，最终的结果就为0.999999，不等于1，使用fabs()函数来比较浮点数大小，即fabs(a-b&gt;0.0001); 新的_Bool类型，类似于int型变量，_Bool型是C语言中布尔变量的类型名，但_Bool类型只能储存1（真）和0（假）。如果把非0变量数值赋给_Bool类型的变量，该变量会被设置为1.]]></content>

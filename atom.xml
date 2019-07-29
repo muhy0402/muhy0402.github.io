@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-29T07:18:20.611Z</updated>
+  <updated>2019-07-29T07:45:00.226Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言逗号表达式</title>
+    <link href="http://yoursite.com/2019/07/29/C%E8%AF%AD%E8%A8%80%E9%80%97%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/07/29/C语言逗号表达式/</id>
+    <published>2019-07-29T07:23:12.506Z</published>
+    <updated>2019-07-29T07:45:00.226Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;逗号在C语言中有很多用处&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;定义变量类型时：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;int a,b,c;&lt;/p&gt;
+&lt;p&gt;定义了三个整型变量a,b,c;&lt;/p&gt;
+&lt;ol
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>while循环</title>
