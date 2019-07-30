@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[do……while语句]]></title>
+    <url>%2F2019%2F07%2F30%2Fdo%E2%80%A6%E2%80%A6while%E8%AF%AD%E5%8F%A5%2F</url>
+    <content type="text"><![CDATA[do_while语句保证了至少执行循环体中的内容一次。 例如： #include “stdio.h” void main() { int a; do{ scanf(“%d”,&amp;a); printf(“a=%d\n”,a); } while (a!=20); printf(“a=20\n”); } 在该程序中会输入几个数值，输出结果为a=你输入的数值，当输入的数值为20时，就会跳出循环终止程序。 注意：在do_while循环中要以分号结尾。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[for循环]]></title>
     <url>%2F2019%2F07%2F29%2Ffor%E5%BE%AA%E7%8E%AF%2F</url>
     <content type="text"><![CDATA[for循环也是一个可以不用进入循环语句的循环， 例如： #include “stdio.h” void main() { int num; for(num=1;num&gt;=6;num–) printf(“good\n”); printf(“num=1\n”); } 这个for循环不进入循环语句中，输出为num=1; for后的第一条语句是定义给变量赋初值亦或是使用printf()函数，在执行循环的其他部分之前，只对第一个表达式求值一次或者赋值一次。]]></content>

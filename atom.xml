@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-29T09:01:16.615Z</updated>
+  <updated>2019-07-30T02:37:47.083Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>do……while语句</title>
+    <link href="http://yoursite.com/2019/07/30/do%E2%80%A6%E2%80%A6while%E8%AF%AD%E5%8F%A5/"/>
+    <id>http://yoursite.com/2019/07/30/do……while语句/</id>
+    <published>2019-07-30T02:09:10.863Z</published>
+    <updated>2019-07-30T02:37:47.083Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;do_while语句保证了至少执行循环体中的内容一次。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;#include “stdio.h”&lt;/p&gt;
+&lt;p&gt;void main()&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;int
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>for循环</title>
