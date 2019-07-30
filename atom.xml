@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-30T02:55:42.090Z</updated>
+  <updated>2019-07-30T07:36:37.286Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算一个数的整数次幂</title>
+    <link href="http://yoursite.com/2019/07/30/%E8%AE%A1%E7%AE%97%E4%B8%80%E4%B8%AA%E6%95%B0%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E5%B9%82/"/>
+    <id>http://yoursite.com/2019/07/30/计算一个数的整数次幂/</id>
+    <published>2019-07-30T07:17:26.851Z</published>
+    <updated>2019-07-30T07:36:37.286Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;不直接使用pow()函数计算一个数的整数次幂&lt;/p&gt;
+&lt;p&gt;#include “stdio.h”&lt;/p&gt;
+&lt;p&gt;double power(double n,int p);&lt;/p&gt;
+&lt;p&gt;void main()&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;double
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>循环的嵌套变式</title>

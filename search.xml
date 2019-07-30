@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[计算一个数的整数次幂]]></title>
+    <url>%2F2019%2F07%2F30%2F%E8%AE%A1%E7%AE%97%E4%B8%80%E4%B8%AA%E6%95%B0%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E5%B9%82%2F</url>
+    <content type="text"><![CDATA[不直接使用pow()函数计算一个数的整数次幂 #include “stdio.h” double power(double n,int p); void main() { double x,xpow; int exp; printf(“输入一个数及要求指数幂\n”); while(scanf(“%lf%d”,&amp;x,&amp;exp)==2) { xpow=power(x,exp); printf(“%lf的%d指数幂结果为%.3lf\n”,x,exp,xpow); } } double power(double n,int p) { double pow=1; int i; for(i=1;i&lt;=p;i++) pow*=n; return pow; } 注意：Scanf()函数的返回值：返回成功读取的项数。如果没有读取任何项，且需要读取一个数字而用户却输入一个非数值字符串，scanf()便返回0； Printf()函数返回值：返回打印字符的个数]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[循环的嵌套变式]]></title>
     <url>%2F2019%2F07%2F30%2F%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%B5%8C%E5%A5%97%E5%8F%98%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[依赖外部循环的嵌套循环： #include “stdio.h” void main() { const int ROWS=6; const int CHARS=6; int row; char ch; for(row=0;row&lt;ROWS;row++) { for(ch=(‘A’+row);ch&lt;(‘A’+CHARS);ch++) printf(“%c”,ch); printf(“\n”); } } 输出为： ABCDEF BCDEF CDEF DEF EF F 在这里说明一下const. const限定符(只读)，例如：const int a=12;//表示a值为12，且在程序中不可更改。 Int * const p=&a;//p不变 Const int * p=&amp;a//a不变 *p为指针变量，在之后的学习中会学到，是C语言中非常重要的一部分。]]></content>

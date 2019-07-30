@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="for循环也是一个可以不用进入循环语句的循环， 例如： #include “stdio.h” void main() { int num; for(num=1;num&amp;gt;=6;num–) printf(“good\n”); printf(“num=1\n”); } 这个for循环不进入循环语句中，输出为num=1; for后的第一条语句是定义给变量赋初值亦或是使用printf()函数，在执行循">
+<meta name="description" content="不直接使用pow()函数计算一个数的整数次幂 #include “stdio.h” double power(double n,int p); void main() { double x,xpow; int exp; printf(“输入一个数及要求指数幂\n”); while(scanf(“%lf%d”,&amp;amp;x,&amp;amp;exp)==2) { xpow=power(x,exp); pri">
 <meta property="og:type" content="article">
-<meta property="og:title" content="for循环">
-<meta property="og:url" content="http://yoursite.com/2019/07/29/for循环/index.html">
+<meta property="og:title" content="计算一个数的整数次幂">
+<meta property="og:url" content="http://yoursite.com/2019/07/30/计算一个数的整数次幂/index.html">
 <meta property="og:site_name" content="İ��">
-<meta property="og:description" content="for循环也是一个可以不用进入循环语句的循环， 例如： #include “stdio.h” void main() { int num; for(num=1;num&amp;gt;=6;num–) printf(“good\n”); printf(“num=1\n”); } 这个for循环不进入循环语句中，输出为num=1; for后的第一条语句是定义给变量赋初值亦或是使用printf()函数，在执行循">
+<meta property="og:description" content="不直接使用pow()函数计算一个数的整数次幂 #include “stdio.h” double power(double n,int p); void main() { double x,xpow; int exp; printf(“输入一个数及要求指数幂\n”); while(scanf(“%lf%d”,&amp;amp;x,&amp;amp;exp)==2) { xpow=power(x,exp); pri">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-29T09:01:16.615Z">
+<meta property="og:updated_time" content="2019-07-30T07:36:37.286Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="for循环">
-<meta name="twitter:description" content="for循环也是一个可以不用进入循环语句的循环， 例如： #include “stdio.h” void main() { int num; for(num=1;num&amp;gt;=6;num–) printf(“good\n”); printf(“num=1\n”); } 这个for循环不进入循环语句中，输出为num=1; for后的第一条语句是定义给变量赋初值亦或是使用printf()函数，在执行循">
+<meta name="twitter:title" content="计算一个数的整数次幂">
+<meta name="twitter:description" content="不直接使用pow()函数计算一个数的整数次幂 #include “stdio.h” double power(double n,int p); void main() { double x,xpow; int exp; printf(“输入一个数及要求指数幂\n”); while(scanf(“%lf%d”,&amp;amp;x,&amp;amp;exp)==2) { xpow=power(x,exp); pri">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/29/for循环/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/30/计算一个数的整数次幂/">
 
 
 
 
 
-  <title>for循环 | İ��</title>
+  <title>计算一个数的整数次幂 | İ��</title>
   
 
 
@@ -294,7 +294,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/for循环/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/计算一个数的整数次幂/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="deer">
@@ -311,7 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">for循环</h1>
+          <h1 class="post-title" itemprop="name headline">计算一个数的整数次幂</h1>
         
 
         <div class="post-meta">
@@ -323,8 +323,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T16:22:29+08:00">
-                2019-07-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T15:17:26+08:00">
+                2019-07-30
               </time>
             
 
@@ -366,18 +366,30 @@
       
 
       
-        <p>for循环也是一个可以不用进入循环语句的循环，</p>
-<p>例如：</p>
+        <p>不直接使用pow()函数计算一个数的整数次幂</p>
 <p>#include “stdio.h”</p>
+<p>double power(double n,int p);</p>
 <p>void main()</p>
 <p>{</p>
-<p>int num;</p>
-<p>for(num=1;num&gt;=6;num–)</p>
-<p>printf(“good\n”);</p>
-<p>printf(“num=1\n”);</p>
+<p>double x,xpow;</p>
+<p>int exp;</p>
+<p>printf(“输入一个数及要求指数幂\n”);</p>
+<p>while(scanf(“%lf%d”,&amp;x,&amp;exp)==2)</p>
+<p>{</p>
+<p>xpow=power(x,exp);</p>
+<p>printf(“%lf的%d指数幂结果为%.3lf\n”,x,exp,xpow);</p>
 <p>}</p>
-<p>这个for循环不进入循环语句中，输出为num=1;</p>
-<p>for后的第一条语句是定义给变量赋初值亦或是使用printf()函数，在执行循环的其他部分之前，只对第一个表达式求值一次或者赋值一次。</p>
+<p>}</p>
+<p>double power(double n,int p)</p>
+<p>{</p>
+<p>double pow=1;</p>
+<p>int i;</p>
+<p>for(i=1;i&lt;=p;i++)</p>
+<p>pow*=n;</p>
+<p>return pow;</p>
+<p>}</p>
+<p>注意：Scanf()函数的返回值：返回成功读取的项数。如果没有读取任何项，且需要读取一个数字而用户却输入一个非数值字符串，scanf()便返回0；</p>
+<p>Printf()函数返回值：返回打印字符的个数</p>
 
       
     </div>
@@ -402,8 +414,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/29/C语言逗号表达式/" rel="next" title="C语言逗号表达式">
-                <i class="fa fa-chevron-left"></i> C语言逗号表达式
+              <a href="/2019/07/30/循环的嵌套变式/" rel="next" title="循环的嵌套变式">
+                <i class="fa fa-chevron-left"></i> 循环的嵌套变式
               </a>
             
           </div>
@@ -411,10 +423,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/30/do……while语句/" rel="prev" title="do……while语句">
-                do……while语句 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
