@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-30T02:37:47.083Z</updated>
+  <updated>2019-07-30T02:55:42.090Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>循环的嵌套变式</title>
+    <link href="http://yoursite.com/2019/07/30/%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%B5%8C%E5%A5%97%E5%8F%98%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/07/30/循环的嵌套变式/</id>
+    <published>2019-07-30T02:45:03.127Z</published>
+    <updated>2019-07-30T02:55:42.090Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;依赖外部循环的嵌套循环：&lt;/p&gt;
+&lt;p&gt;#include “stdio.h”&lt;/p&gt;
+&lt;p&gt;void main()&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;const int ROWS=6;&lt;/p&gt;
+&lt;p&gt;const int CHARS=6;&lt;/p&gt;
+&lt;p&gt;int
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>do……while语句</title>
