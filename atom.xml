@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-30T07:36:37.286Z</updated>
+  <updated>2019-08-01T09:56:37.630Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>if语句</title>
+    <link href="http://yoursite.com/2019/07/30/if%E8%AF%AD%E5%8F%A5/"/>
+    <id>http://yoursite.com/2019/07/30/if语句/</id>
+    <published>2019-07-30T09:08:05.427Z</published>
+    <updated>2019-08-01T09:56:37.630Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;if 条件语句&lt;/p&gt;
+&lt;p&gt;​    简单形式的if语句可以让程序选择执行一条语句，或者跳过这条语句。&lt;/p&gt;
+&lt;p&gt;​    通用形式如下：&lt;/p&gt;
+&lt;p&gt;​    if(expression)&lt;/p&gt;
+&lt;p&gt;​    statement;&lt;/p&gt;
+&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>计算一个数的整数次幂</title>

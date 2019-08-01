@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="while循环使用时，可以不进入循环 例如： #include “stdio.h” void main() { int a; a=2; while(a&amp;lt;2) { printf(“good\n”); a++; } printf(“a=2\n”); } 在该循环中，while循环不进入，即输出没有good. 在该程序中，输出只有a=2； while循环可认为是“当”，当while后的语句为真时才">
+<meta name="description" content="if 条件语句 ​    简单形式的if语句可以让程序选择执行一条语句，或者跳过这条语句。 ​    通用形式如下： ​    if(expression) ​    statement; ​    如果对expression求值为真（非0），则执行statement；否则，跳过statement. if else语句 ​    通用形式如下： ​    if(expression) ​    s">
 <meta name="keywords" content="computer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="while循环">
-<meta property="og:url" content="http://yoursite.com/2019/07/29/while循环/index.html">
+<meta property="og:title" content="if语句">
+<meta property="og:url" content="http://yoursite.com/2019/07/30/if语句/index.html">
 <meta property="og:site_name" content="travelers">
-<meta property="og:description" content="while循环使用时，可以不进入循环 例如： #include “stdio.h” void main() { int a; a=2; while(a&amp;lt;2) { printf(“good\n”); a++; } printf(“a=2\n”); } 在该循环中，while循环不进入，即输出没有good. 在该程序中，输出只有a=2； while循环可认为是“当”，当while后的语句为真时才">
+<meta property="og:description" content="if 条件语句 ​    简单形式的if语句可以让程序选择执行一条语句，或者跳过这条语句。 ​    通用形式如下： ​    if(expression) ​    statement; ​    如果对expression求值为真（非0），则执行statement；否则，跳过statement. if else语句 ​    通用形式如下： ​    if(expression) ​    s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-29T07:18:20.611Z">
+<meta property="og:updated_time" content="2019-08-01T09:56:37.630Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="while循环">
-<meta name="twitter:description" content="while循环使用时，可以不进入循环 例如： #include “stdio.h” void main() { int a; a=2; while(a&amp;lt;2) { printf(“good\n”); a++; } printf(“a=2\n”); } 在该循环中，while循环不进入，即输出没有good. 在该程序中，输出只有a=2； while循环可认为是“当”，当while后的语句为真时才">
+<meta name="twitter:title" content="if语句">
+<meta name="twitter:description" content="if 条件语句 ​    简单形式的if语句可以让程序选择执行一条语句，或者跳过这条语句。 ​    通用形式如下： ​    if(expression) ​    statement; ​    如果对expression求值为真（非0），则执行statement；否则，跳过statement. if else语句 ​    通用形式如下： ​    if(expression) ​    s">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/29/while循环/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/30/if语句/">
 
 
 
 
 
-  <title>while循环 | travelers</title>
+  <title>if语句 | travelers</title>
   
 
 
@@ -295,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/while循环/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/if语句/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="deer">
@@ -312,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">while循环</h1>
+          <h1 class="post-title" itemprop="name headline">if语句</h1>
         
 
         <div class="post-meta">
@@ -324,8 +324,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T14:40:31+08:00">
-                2019-07-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T17:08:05+08:00">
+                2019-07-30
               </time>
             
 
@@ -367,25 +367,47 @@
       
 
       
-        <p>while循环使用时，可以不进入循环</p>
-<p>例如：</p>
+        <p>if 条件语句</p>
+<p>​    简单形式的if语句可以让程序选择执行一条语句，或者跳过这条语句。</p>
+<p>​    通用形式如下：</p>
+<p>​    if(expression)</p>
+<p>​    statement;</p>
+<p>​    如果对expression求值为真（非0），则执行statement；否则，跳过statement.</p>
+<p>if else语句</p>
+<p>​    通用形式如下：</p>
+<p>​    if(expression)</p>
+<p>​    statement1;</p>
+<p>​    else</p>
+<p>​    statement2;</p>
+<p>​    如果expression为真（非0），则执行statement1;如果expression为假或0，则执行else后面的        statement2.</p>
+<p>介绍一下getchar()和putchar()</p>
+<p>​    getchar()为字符输入函数，该函数不带任何参数，它从输入队列中返回下一个字符。</p>
+<p>​    例如：</p>
+<p>​         ch=getchar();      //读取下一个字符输入，并把该字符的值赋给变量ch;</p>
+<p>​         该句与scanf(“%c”,&amp;ch);效果相同。</p>
+<p>​    putchar()为字符输出函数，该函数打印它的参数。</p>
+<p>​    例如：</p>
+<p>​        putchar(ch);    //把之前赋给ch的值作为字符打印出来；</p>
+<p>​        该句与printf(“%c”,ch);效果相同。</p>
+<p>下面给出一个例子：</p>
 <p>#include “stdio.h”</p>
+<p>#define SPACE ‘ ‘</p>
 <p>void main()</p>
 <p>{</p>
-<p>int a;</p>
-<p>a=2;</p>
-<p>while(a&lt;2)</p>
+<p>char ch;</p>
+<p>ch=getchar();        //读取一个字符</p>
+<p>while(ch!=’\n’)         //当一行未结束时</p>
 <p>{</p>
-<p>printf(“good\n”);</p>
-<p>a++;</p>
+<p>if(ch==SPACE)          //留下空格</p>
+<p>putchar(ch);          //该字符不变</p>
+<p>else</p>
+<p>putchar(ch+1);         //改变其它字符</p>
+<p>ch=getchar();        //获取下一个字符</p>
 <p>}</p>
-<p>printf(“a=2\n”);</p>
+<p>putchar(ch);        //打印换行符</p>
 <p>}</p>
-<p>在该循环中，while循环不进入，即输出没有good.</p>
-<p>在该程序中，输出只有a=2；</p>
-<p>while循环可认为是“当”，当while后的语句为真时才继续进入循环</p>
-<p>使用关系运算符时，可以比较浮点数的大小，但是尽量使用&lt;和&gt;，当存储的数据为1/3时，3*1/3的结果为1.0，但如果把1/3表示成小数点后六位，最终的结果就为0.999999，不等于1，使用fabs()函数来比较浮点数大小，即fabs(a-b&gt;0.0001);</p>
-<p>新的_Bool类型，类似于int型变量，_Bool型是C语言中布尔变量的类型名，但_Bool类型只能储存1（真）和0（假）。如果把非0变量数值赋给_Bool类型的变量，该变量会被设置为1.</p>
+<p>在该程序中，若输入空格，则输出仍是空格，若输入是字符，则输出为输入加一的字符，若换行则结束循环。</p>
+<p>​    </p>
 
       
     </div>
@@ -410,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/18/简单的程序示例/" rel="next" title="简单的程序示例">
-                <i class="fa fa-chevron-left"></i> 简单的程序示例
+              <a href="/2019/07/30/计算一个数的整数次幂/" rel="next" title="计算一个数的整数次幂">
+                <i class="fa fa-chevron-left"></i> 计算一个数的整数次幂
               </a>
             
           </div>
@@ -419,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/29/C语言逗号表达式/" rel="prev" title="C语言逗号表达式">
-                C语言逗号表达式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

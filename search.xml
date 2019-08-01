@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[if语句]]></title>
+    <url>%2F2019%2F07%2F30%2Fif%E8%AF%AD%E5%8F%A5%2F</url>
+    <content type="text"><![CDATA[if 条件语句 ​ 简单形式的if语句可以让程序选择执行一条语句，或者跳过这条语句。 ​ 通用形式如下： ​ if(expression) ​ statement; ​ 如果对expression求值为真（非0），则执行statement；否则，跳过statement. if else语句 ​ 通用形式如下： ​ if(expression) ​ statement1; ​ else ​ statement2; ​ 如果expression为真（非0），则执行statement1;如果expression为假或0，则执行else后面的 statement2. 介绍一下getchar()和putchar() ​ getchar()为字符输入函数，该函数不带任何参数，它从输入队列中返回下一个字符。 ​ 例如： ​ ch=getchar(); //读取下一个字符输入，并把该字符的值赋给变量ch; ​ 该句与scanf(“%c”,&amp;ch);效果相同。 ​ putchar()为字符输出函数，该函数打印它的参数。 ​ 例如： ​ putchar(ch); //把之前赋给ch的值作为字符打印出来； ​ 该句与printf(“%c”,ch);效果相同。 下面给出一个例子： #include “stdio.h” #define SPACE ‘ ‘ void main() { char ch; ch=getchar(); //读取一个字符 while(ch!=’\n’) //当一行未结束时 { if(ch==SPACE) //留下空格 putchar(ch); //该字符不变 else putchar(ch+1); //改变其它字符 ch=getchar(); //获取下一个字符 } putchar(ch); //打印换行符 } 在该程序中，若输入空格，则输出仍是空格，若输入是字符，则输出为输入加一的字符，若换行则结束循环。 ​]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[计算一个数的整数次幂]]></title>
     <url>%2F2019%2F07%2F30%2F%E8%AE%A1%E7%AE%97%E4%B8%80%E4%B8%AA%E6%95%B0%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E5%B9%82%2F</url>
     <content type="text"><![CDATA[不直接使用pow()函数计算一个数的整数次幂 #include “stdio.h” double power(double n,int p); void main() { double x,xpow; int exp; printf(“输入一个数及要求指数幂\n”); while(scanf(“%lf%d”,&amp;x,&amp;exp)==2) { xpow=power(x,exp); printf(“%lf的%d指数幂结果为%.3lf\n”,x,exp,xpow); } } double power(double n,int p) { double pow=1; int i; for(i=1;i&lt;=p;i++) pow*=n; return pow; } 注意：Scanf()函数的返回值：返回成功读取的项数。如果没有读取任何项，且需要读取一个数字而用户却输入一个非数值字符串，scanf()便返回0； Printf()函数返回值：返回打印字符的个数]]></content>
