@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-01T09:56:37.630Z</updated>
+  <updated>2019-08-01T10:16:58.362Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多重选择else if</title>
+    <link href="http://yoursite.com/2019/08/01/%E5%A4%9A%E9%87%8D%E9%80%89%E6%8B%A9else-if/"/>
+    <id>http://yoursite.com/2019/08/01/多重选择else-if/</id>
+    <published>2019-08-01T09:58:35.289Z</published>
+    <updated>2019-08-01T10:16:58.362Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;else if 是if else语句的变式。&lt;/p&gt;
+&lt;p&gt;例如以下部分代码：&lt;/p&gt;
+&lt;p&gt;if(score&amp;lt;1000)&lt;/p&gt;
+&lt;p&gt;bonus=0;&lt;/p&gt;
+&lt;p&gt;else
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>if语句</title>
