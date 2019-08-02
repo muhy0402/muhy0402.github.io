@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[利用简单的if语句判断素数]]></title>
+    <url>%2F2019%2F08%2F02%2F%E5%88%A9%E7%94%A8%E7%AE%80%E5%8D%95%E7%9A%84if%E8%AF%AD%E5%8F%A5%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[判断素数这个问题是c语言条件，循环中最简单的一个问题 下面就来介绍一下判断素数的代码吧 #include “stdio.h” void main() { int x,i; int flag=1; scanf(“%d”,&amp;x); for(i=2;i&lt;x;i++) { if(x%i==0) flag=0; } if(flag==1) printf(“%d是素数”,x); else printf(“%d不是素数”,x); } 在该程序中，你可以任意输入一个整型数来判断输入的数是否为素数。当然还有一类题是已经给出你范围，让你打印出在这个范围内的素数，以下代码则可以实现： #include “stdio.h” void main() { int i,flag; int m; for(m=3;m&lt;=200;m++) { flag=1; for(i=2;i&lt;m;i++) { if(m%i==0) flag=0; } if(flag==1) printf(“%d “,m); else printf(“ “); } } 在该代码中m的范围在3200，即该程序目的是打印出3200范围内的所有素数，该程序的核心代码与上述代码是一致的，不同的是在该程序中添加了一个循环，这个循环正好是将3~200之间的数字循环一遍。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[多重选择else if]]></title>
     <url>%2F2019%2F08%2F01%2F%E5%A4%9A%E9%87%8D%E9%80%89%E6%8B%A9else-if%2F</url>
     <content type="text"><![CDATA[else if 是if else语句的变式。 例如以下部分代码： if(score&lt;1000) bonus=0; else if(score&lt;1500) bonus=1; else if(score&lt;2000) bonus=2; else if(score&lt;2500) bonus=4; else bonus=6; 以上代码的通俗解释：如果score&lt;1000，那么bonus=0；如果score在10001500之间，那么bonus=1；如果score在15002000之间，那么bonus=2；如果score在2000~2500之间，那么bonus=4；如果score&gt;2500，那么bonus=6。 上述代码还有另一种写法： if(score&lt;1000) ​ bonus=0; else ​ if(score&lt;1500) ​ bonus=1; ​ else ​ if(score&lt;2000) ​ bonus=2; ​ else ​ if(score&lt;2500) ​ bonus=4; ​ else ​ bonus=6;]]></content>

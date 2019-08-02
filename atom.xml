@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-01T10:16:58.362Z</updated>
+  <updated>2019-08-02T09:09:50.173Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用简单的if语句判断素数</title>
+    <link href="http://yoursite.com/2019/08/02/%E5%88%A9%E7%94%A8%E7%AE%80%E5%8D%95%E7%9A%84if%E8%AF%AD%E5%8F%A5%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/"/>
+    <id>http://yoursite.com/2019/08/02/利用简单的if语句判断素数/</id>
+    <published>2019-08-02T08:56:43.739Z</published>
+    <updated>2019-08-02T09:09:50.173Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;判断素数这个问题是c语言条件，循环中最简单的一个问题&lt;/p&gt;
+&lt;p&gt;下面就来介绍一下判断素数的代码吧&lt;/p&gt;
+&lt;p&gt;#include “stdio.h”&lt;/p&gt;
+&lt;p&gt;void main()&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;int x,i;&lt;/p&gt;
+&lt;p&gt;int
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>多重选择else if</title>

@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="do_while语句保证了至少执行循环体中的内容一次。 例如： #include “stdio.h” void main() { int a; do{ scanf(“%d”,&amp;amp;a); printf(“a=%d\n”,a); } while (a!=20); printf(“a=20\n”); } 在该程序中会输入几个数值，输出结果为a=你输入的数值，当输入的数值为20时，就会跳出循环终止程">
+<meta name="description" content="判断素数这个问题是c语言条件，循环中最简单的一个问题 下面就来介绍一下判断素数的代码吧 #include “stdio.h” void main() { int x,i; int flag=1; scanf(“%d”,&amp;amp;x); for(i=2;i&amp;lt;x;i++) { if(x%i==0) flag=0; } if(flag==1) printf(“%d是素数”,x); else pri">
 <meta name="keywords" content="computer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="do……while语句">
-<meta property="og:url" content="http://yoursite.com/2019/07/30/do……while语句/index.html">
+<meta property="og:title" content="利用简单的if语句判断素数">
+<meta property="og:url" content="http://yoursite.com/2019/08/02/利用简单的if语句判断素数/index.html">
 <meta property="og:site_name" content="travelers">
-<meta property="og:description" content="do_while语句保证了至少执行循环体中的内容一次。 例如： #include “stdio.h” void main() { int a; do{ scanf(“%d”,&amp;amp;a); printf(“a=%d\n”,a); } while (a!=20); printf(“a=20\n”); } 在该程序中会输入几个数值，输出结果为a=你输入的数值，当输入的数值为20时，就会跳出循环终止程">
+<meta property="og:description" content="判断素数这个问题是c语言条件，循环中最简单的一个问题 下面就来介绍一下判断素数的代码吧 #include “stdio.h” void main() { int x,i; int flag=1; scanf(“%d”,&amp;amp;x); for(i=2;i&amp;lt;x;i++) { if(x%i==0) flag=0; } if(flag==1) printf(“%d是素数”,x); else pri">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-30T02:37:47.083Z">
+<meta property="og:updated_time" content="2019-08-02T09:09:50.173Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="do……while语句">
-<meta name="twitter:description" content="do_while语句保证了至少执行循环体中的内容一次。 例如： #include “stdio.h” void main() { int a; do{ scanf(“%d”,&amp;amp;a); printf(“a=%d\n”,a); } while (a!=20); printf(“a=20\n”); } 在该程序中会输入几个数值，输出结果为a=你输入的数值，当输入的数值为20时，就会跳出循环终止程">
+<meta name="twitter:title" content="利用简单的if语句判断素数">
+<meta name="twitter:description" content="判断素数这个问题是c语言条件，循环中最简单的一个问题 下面就来介绍一下判断素数的代码吧 #include “stdio.h” void main() { int x,i; int flag=1; scanf(“%d”,&amp;amp;x); for(i=2;i&amp;lt;x;i++) { if(x%i==0) flag=0; } if(flag==1) printf(“%d是素数”,x); else pri">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/30/do……while语句/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/02/利用简单的if语句判断素数/">
 
 
 
 
 
-  <title>do……while语句 | travelers</title>
+  <title>利用简单的if语句判断素数 | travelers</title>
   
 
 
@@ -295,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/do……while语句/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/02/利用简单的if语句判断素数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="deer">
@@ -312,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">do……while语句</h1>
+          <h1 class="post-title" itemprop="name headline">利用简单的if语句判断素数</h1>
         
 
         <div class="post-meta">
@@ -324,8 +324,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T10:09:10+08:00">
-                2019-07-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-02T16:56:43+08:00">
+                2019-08-02
               </time>
             
 
@@ -367,21 +367,45 @@
       
 
       
-        <p>do_while语句保证了至少执行循环体中的内容一次。</p>
-<p>例如：</p>
+        <p>判断素数这个问题是c语言条件，循环中最简单的一个问题</p>
+<p>下面就来介绍一下判断素数的代码吧</p>
 <p>#include “stdio.h”</p>
 <p>void main()</p>
 <p>{</p>
-<p>int a;</p>
-<p>do{</p>
-<p>scanf(“%d”,&amp;a);</p>
-<p>printf(“a=%d\n”,a);</p>
+<p>int x,i;</p>
+<p>int flag=1;</p>
+<p>scanf(“%d”,&amp;x);</p>
+<p>for(i=2;i&lt;x;i++)</p>
+<p>{</p>
+<p>if(x%i==0)</p>
+<p>flag=0;</p>
 <p>}</p>
-<p>while (a!=20);</p>
-<p>printf(“a=20\n”);</p>
+<p>if(flag==1)</p>
+<p>printf(“%d是素数”,x);</p>
+<p>else</p>
+<p>printf(“%d不是素数”,x);</p>
 <p>}</p>
-<p>在该程序中会输入几个数值，输出结果为a=你输入的数值，当输入的数值为20时，就会跳出循环终止程序。</p>
-<p>注意：在do_while循环中要以分号结尾。</p>
+<p>在该程序中，你可以任意输入一个整型数来判断输入的数是否为素数。当然还有一类题是已经给出你范围，让你打印出在这个范围内的素数，以下代码则可以实现：</p>
+<p>#include “stdio.h”</p>
+<p>void main()</p>
+<p>{</p>
+<p>int i,flag;</p>
+<p>int m;</p>
+<p>for(m=3;m&lt;=200;m++)</p>
+<p>{</p>
+<p>flag=1;</p>
+<p>for(i=2;i&lt;m;i++)</p>
+<p>{</p>
+<p>if(m%i==0)</p>
+<p>flag=0;</p>
+<p>}</p>
+<p>if(flag==1)</p>
+<p>printf(“%d “,m);</p>
+<p>else</p>
+<p>printf(“ “);</p>
+<p>}</p>
+<p>}</p>
+<p>在该代码中m的范围在3<del>200，即该程序目的是打印出3</del>200范围内的所有素数，该程序的核心代码与上述代码是一致的，不同的是在该程序中添加了一个循环，这个循环正好是将3~200之间的数字循环一遍。</p>
 
       
     </div>
@@ -406,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/29/for循环/" rel="next" title="for循环">
-                <i class="fa fa-chevron-left"></i> for循环
+              <a href="/2019/08/01/多重选择else-if/" rel="next" title="多重选择else if">
+                <i class="fa fa-chevron-left"></i> 多重选择else if
               </a>
             
           </div>
@@ -415,10 +439,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/30/循环的嵌套变式/" rel="prev" title="循环的嵌套变式">
-                循环的嵌套变式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

@@ -295,6 +295,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/02/利用简单的if语句判断素数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="deer">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="travelers">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/02/利用简单的if语句判断素数/" itemprop="url">利用简单的if语句判断素数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-02T16:56:43+08:00">
+                2019-08-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+     
+         
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>判断素数这个问题是c语言条件，循环中最简单的一个问题</p>
+<p>下面就来介绍一下判断素数的代码吧</p>
+<p>#include “stdio.h”</p>
+<p>void main()</p>
+<p>{</p>
+<p>int x,i;</p>
+<p>int flag=1;</p>
+<p>scanf(“%d”,&amp;x);</p>
+<p>for(i=2;i&lt;x;i++)</p>
+<p>{</p>
+<p>if(x%i==0)</p>
+<p>flag=0;</p>
+<p>}</p>
+<p>if(flag==1)</p>
+<p>printf(“%d是素数”,x);</p>
+<p>else</p>
+<p>printf(“%d不是素数”,x);</p>
+<p>}</p>
+<p>在该程序中，你可以任意输入一个整型数来判断输入的数是否为素数。当然还有一类题是已经给出你范围，让你打印出在这个范围内的素数，以下代码则可以实现：</p>
+<p>#include “stdio.h”</p>
+<p>void main()</p>
+<p>{</p>
+<p>int i,flag;</p>
+<p>int m;</p>
+<p>for(m=3;m&lt;=200;m++)</p>
+<p>{</p>
+<p>flag=1;</p>
+<p>for(i=2;i&lt;m;i++)</p>
+<p>{</p>
+<p>if(m%i==0)</p>
+<p>flag=0;</p>
+<p>}</p>
+<p>if(flag==1)</p>
+<p>printf(“%d “,m);</p>
+<p>else</p>
+<p>printf(“ “);</p>
+<p>}</p>
+<p>}</p>
+<p>在该代码中m的范围在3<del>200，即该程序目的是打印出3</del>200范围内的所有素数，该程序的核心代码与上述代码是一致的，不同的是在该程序中添加了一个循环，这个循环正好是将3~200之间的数字循环一遍。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/01/多重选择else-if/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1566,133 +1726,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/16/冒泡排序/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="deer">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="travelers">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/16/冒泡排序/" itemprop="url">冒泡排序</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-16T21:36:51+08:00">
-                2019-06-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-     
-         
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>之前面试实验室，所有实验室都会问到这个问题，可以说这个问题是学了循环和数组之后最基础的问题，今天deer就来回忆回忆</p>
-<p>#include &lt;stdio.h&gt;</p>
-<p>int main()</p>
-<p>{
-    int i=0;<br>    int j=0,t=0;<br>    int a[5]={32,78,31,89,65};<br>    for(i=0;i&lt;5;i++)<br>    {<br>        for(j=0;j&lt;5-i-1;j++)<br>            if(a[j]&gt;a[j+1])<br>            {<br>                t=a[j];<br>                a[j]=a[j+1];<br>                a[j+1]=t;<br>            }<br>    }<br>    printf(“排序结果为：\n”);<br>    for(i=0;i&lt;5;i++)<br>        printf(“%d “,a[i]);<br>}</p>
-<p>冒泡排序法是一种简单的交换类排序方法，它是通过相邻的数据元素的交换，逐步将待排序序列变为有序序列的过程</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1745,7 +1778,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
