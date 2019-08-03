@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[switch case 语句]]></title>
+    <url>%2F2019%2F08%2F03%2Fswitch-case-%E8%AF%AD%E5%8F%A5%2F</url>
+    <content type="text"><![CDATA[switch(整形表达式) { case 常量1： 语句； case 常量2： 语句； case 常量3： 语句； default： 语句; } 注意：switch在圆括号中的测试表达式的值应该是一个整数值（包括char类型）。case标签必须是整数类型（包括char类型）的常量或整形常量表达式。不能用变量作为case的标签。 在switch case语句中，还有一个break的问题 若在case后加上break则程序会直接退出switch语句，若没有break语句，那么程序会在case语句执行完继续执行下一个case语句，比如： int a=1; switch (num) { case 1: a=2; case 2: a=a+1; case 3: a=a+2; default: a=a+3; } 若输入的num的值为2，无break的最后a的值为1+1+2+3=7 int a=1; switch (num) { case 1: a=2; break; case 2: a=a+1; break; case 3: a=a+2; break; default: a=a+3; } 若输入的num的值为2，有break的最后a的值为1+1=2]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[逻辑运算符及条件运算符]]></title>
     <url>%2F2019%2F08%2F02%2F%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E5%8F%8A%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6%2F</url>
     <content type="text"><![CDATA[下面给大家介绍一下逻辑运算符和逻辑表达式 逻辑运算符有； &amp;&amp; 与 || 或 ！ 非 优先级： ！&gt;&amp;&amp; &gt;|| 逻辑表达式：当且仅当expression1和expression2都为真，expression1&amp;&amp;expression2才为真。 如果expression1或expression2为真，expression1||expression2为真。 如果expression为假，!expression则为真，反之亦然。 条件运算符： ​ ？： 有下面语句： if(y&lt;0) x=-y; else x=y; 该语句的意思是“如果y小于0，那么x=-y；否则，x=y”，该语句可用条件表达式表达如下： x=(y&lt;0)?-y:y 条件表达式的通用形式如下： expression1?expression2:expression3 如果expression1为真，那么整个表达式的值与expression2的值相同； 如果expression1为假，那么整个表达式的值与expression3的值相同；]]></content>
