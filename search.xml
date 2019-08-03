@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[逻辑运算符及条件运算符]]></title>
+    <url>%2F2019%2F08%2F02%2F%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E5%8F%8A%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6%2F</url>
+    <content type="text"><![CDATA[下面给大家介绍一下逻辑运算符和逻辑表达式 逻辑运算符有； &amp;&amp; 与 || 或 ！ 非 优先级： ！&gt;&amp;&amp; &gt;|| 逻辑表达式：当且仅当expression1和expression2都为真，expression1&amp;&amp;expression2才为真。 如果expression1或expression2为真，expression1||expression2为真。 如果expression为假，!expression则为真，反之亦然。 条件运算符： ​ ？： 有下面语句： if(y&lt;0) x=-y; else x=y; 该语句的意思是“如果y小于0，那么x=-y；否则，x=y”，该语句可用条件表达式表达如下： x=(y&lt;0)?-y:y 条件表达式的通用形式如下： expression1?expression2:expression3 如果expression1为真，那么整个表达式的值与expression2的值相同； 如果expression1为假，那么整个表达式的值与expression3的值相同；]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[利用简单的if语句判断素数]]></title>
     <url>%2F2019%2F08%2F02%2F%E5%88%A9%E7%94%A8%E7%AE%80%E5%8D%95%E7%9A%84if%E8%AF%AD%E5%8F%A5%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0%2F</url>
     <content type="text"><![CDATA[判断素数这个问题是c语言条件，循环中最简单的一个问题 下面就来介绍一下判断素数的代码吧 #include “stdio.h” void main() { int x,i; int flag=1; scanf(“%d”,&amp;x); for(i=2;i&lt;x;i++) { if(x%i==0) flag=0; } if(flag==1) printf(“%d是素数”,x); else printf(“%d不是素数”,x); } 在该程序中，你可以任意输入一个整型数来判断输入的数是否为素数。当然还有一类题是已经给出你范围，让你打印出在这个范围内的素数，以下代码则可以实现： #include “stdio.h” void main() { int i,flag; int m; for(m=3;m&lt;=200;m++) { flag=1; for(i=2;i&lt;m;i++) { if(m%i==0) flag=0; } if(flag==1) printf(“%d “,m); else printf(“ “); } } 在该代码中m的范围在3200，即该程序目的是打印出3200范围内的所有素数，该程序的核心代码与上述代码是一致的，不同的是在该程序中添加了一个循环，这个循环正好是将3~200之间的数字循环一遍。]]></content>

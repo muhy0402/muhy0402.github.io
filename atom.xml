@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-02T09:09:50.173Z</updated>
+  <updated>2019-08-03T06:35:10.343Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>逻辑运算符及条件运算符</title>
+    <link href="http://yoursite.com/2019/08/02/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E5%8F%8A%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <id>http://yoursite.com/2019/08/02/逻辑运算符及条件运算符/</id>
+    <published>2019-08-02T09:18:34.970Z</published>
+    <updated>2019-08-03T06:35:10.343Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;下面给大家介绍一下逻辑运算符和逻辑表达式&lt;/p&gt;
+&lt;p&gt;逻辑运算符有；&lt;/p&gt;
+&lt;p&gt;&amp;amp;&amp;amp;   与&lt;/p&gt;
+&lt;p&gt;||    或&lt;/p&gt;
+&lt;p&gt;！    非&lt;/p&gt;
+&lt;p&gt;优先级：     ！&amp;gt;&amp;amp;&amp;amp;  
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>利用简单的if语句判断素数</title>
