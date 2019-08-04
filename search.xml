@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[混合数值和字符输入]]></title>
+    <url>%2F2019%2F08%2F04%2F%E6%B7%B7%E5%90%88%E6%95%B0%E5%80%BC%E5%92%8C%E5%AD%97%E7%AC%A6%E8%BE%93%E5%85%A5%2F</url>
+    <content type="text"><![CDATA[令程序读入一个字符，两个数值，打印出某行某列个该字符。 #include “stdio.h” void display(char cr,int lines,int width); void main() { char ch; int rows,cols; while((ch=getchar())!=’\n’); { if(scanf(“%d %d”,&amp;rows,&amp;cols)!=2) break; display(ch,rows,cols); while(getchar()!=’\n’) continue; } printf(“Bye.\n”); } void display(char cr,int lines,int width) { int row,col; for(row=1;row&lt;=lines;row++) { for(col=1;col&lt;=width;col++) putchar(cr); putchar(“\n”); } } 在该程序中，只要正确输入两个数值，就会打印出相应的字符；、 同时该程序灵活的使用了break和continue语句，解决了程序只能运行一次的问题。 程序只能运行一次是什么问题呢？ #include “stdio.h” void display(char cr,int lines,int width); void main() { char ch; int rows,cols; while((ch=getchar())!=’\n’); { scanf(“%d %d”,&amp;rows,&amp;cols) display(ch,rows,cols); } printf(“Bye.\n”); } void display(char cr,int lines,int width) { int row,col; for(row=1;row&lt;=lines;row++) { for(col=1;col&lt;=width;col++) putchar(cr); putchar(“\n”); } } 上面这个程序看起来也没什么问题，但是当你运行它的时候，问题就出现了 这个程序只能运行一次，当你想输入第二组字符和数值时程序会直接退出。 当你将一组字符和数字输入完成后，会点击回车，这个换行符就出现问题了。 scanf()函数把这个换行符留在输入队列中。和scanf()不同的是，getchar()不会跳过换行符，所以在进行第二组的时候，getchar()直接读取换行符，然后将其赋给ch，从while循环就退出程序。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[编程用*显示出三角形]]></title>
     <url>%2F2019%2F08%2F04%2F%E7%BC%96%E7%A8%8B%E7%94%A8-%E6%98%BE%E7%A4%BA%E5%87%BA%E4%B8%89%E8%A7%92%E5%BD%A2%2F</url>
     <content type="text"><![CDATA[编程显示出三角形并不难，但是需要思路清晰，下面我们就来分析一下该如何编程： 当输入为4时输出如下图形： 首先，该图形是由空格和*表示的 当输入为4时： 第一行：空格数为6-1=5；*数为2乘行数减1=1； 第二行：空格数为6-2=4；*数为2乘行数减1=3； 第三行：空格数为6-3=3；*数为2乘行数减1=5； 第四行：空格数为6-4=2；*数为2乘行数减1=7； 由此可归纳出：若输入值为n，第i行的空格数为n-i；*数为2i-1个；然后再利用循环嵌套 这个程序就很容易写出来了，如下： #include “stdio.h” void main() { int i,j,n; scanf(“%d”,&amp;n); for(i=1;i&lt;=n;i++) { for(j=1;j&lt;=n-i;j++) printf(“ “); for(j=1;j&lt;=2*i-1;j++) printf(“*”); printf(“\n”); } }]]></content>
