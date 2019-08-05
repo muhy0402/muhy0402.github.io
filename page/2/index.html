@@ -265,6 +265,154 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/循环的嵌套变式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="deer">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="travelers">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/30/循环的嵌套变式/" itemprop="url">循环的嵌套变式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T10:45:03+08:00">
+                2019-07-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+     
+         
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>依赖外部循环的嵌套循环：</p>
+<p>#include “stdio.h”</p>
+<p>void main()</p>
+<p>{</p>
+<p>const int ROWS=6;</p>
+<p>const int CHARS=6;</p>
+<p>int row;</p>
+<p>char ch;</p>
+<p>for(row=0;row&lt;ROWS;row++)</p>
+<p>{</p>
+<p>for(ch=(‘A’+row);ch&lt;(‘A’+CHARS);ch++)</p>
+<p>printf(“%c”,ch);</p>
+<p>printf(“\n”);</p>
+<p>}</p>
+<p>}</p>
+<p>输出为：</p>
+<p>ABCDEF</p>
+<p>BCDEF</p>
+<p>CDEF</p>
+<p>DEF</p>
+<p>EF</p>
+<p>F</p>
+<p>在这里说明一下const.</p>
+<p>const限定符(只读)，例如：const int a=12;//表示a值为12，且在程序中不可更改。</p>
+<p>Int * const p=&a;//p不变</p>
+<p>Const int * p=&amp;a//a不变</p>
+<p>*p为指针变量，在之后的学习中会学到，是C语言中非常重要的一部分。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/do……while语句/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1368,7 +1516,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

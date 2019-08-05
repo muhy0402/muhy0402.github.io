@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[创建并使用简单函数]]></title>
+    <url>%2F2019%2F08%2F05%2F%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%AE%80%E5%8D%95%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[#include “stdio.h” void age(void); void main() { char name[20]; gets(name); puts(name); age(); } void age(void) { int x; printf(“请输入年龄：”); scanf(“%d”,&amp;x); printf(“age=%d\n”,x); } 在该程序中，调用了age()函数。 自定义函数要注意，包括函数类型，函数名，圆括号函数返回类型。 在调用函数和声明函数时要记得有分号，在定义函数时与写主函数是一样的，需要大家下去多加练习。 函数的使用对于整个程序而言是十分重要的，在写大程序时思路清晰，一个函数一个内容，在编写和修改时都十分方便。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[getchar()函数]]></title>
     <url>%2F2019%2F08%2F05%2Fgetchar-%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[getchar()函数把每个字符解释成一个字符编码。许多程序使用getchar()逐字符读取输入，通常，系统使用行缓冲输入，即当用户按下Enter键后数据才会被传入给程序。而按下Enter键后同样会传入一个换行符，在某些时候，这个换行符会是程序出现问题，所以，我们要学会如何适当的解决这个换行符。]]></content>

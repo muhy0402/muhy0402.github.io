@@ -265,6 +265,147 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/创建并使用简单函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="deer">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="travelers">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/05/创建并使用简单函数/" itemprop="url">创建并使用简单函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-05T15:40:24+08:00">
+                2019-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+     
+         
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#include “stdio.h”</p>
+<p>void age(void);</p>
+<p>void main()</p>
+<p>{</p>
+<p>char name[20];</p>
+<p>gets(name);</p>
+<p>puts(name);</p>
+<p>age();</p>
+<p>}</p>
+<p>void age(void)</p>
+<p>{</p>
+<p>int x;</p>
+<p>printf(“请输入年龄：”);</p>
+<p>scanf(“%d”,&amp;x);</p>
+<p>printf(“age=%d\n”,x);</p>
+<p>}</p>
+<p>在该程序中，调用了age()函数。</p>
+<p>自定义函数要注意，包括函数类型，函数名，圆括号函数返回类型。</p>
+<p>在调用函数和声明函数时要记得有分号，在定义函数时与写主函数是一样的，需要大家下去多加练习。</p>
+<p>函数的使用对于整个程序而言是十分重要的，在写大程序时思路清晰，一个函数一个内容，在编写和修改时都十分方便。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/getchar-函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1620,154 +1761,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/循环的嵌套变式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="deer">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="travelers">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/30/循环的嵌套变式/" itemprop="url">循环的嵌套变式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T10:45:03+08:00">
-                2019-07-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-     
-         
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>依赖外部循环的嵌套循环：</p>
-<p>#include “stdio.h”</p>
-<p>void main()</p>
-<p>{</p>
-<p>const int ROWS=6;</p>
-<p>const int CHARS=6;</p>
-<p>int row;</p>
-<p>char ch;</p>
-<p>for(row=0;row&lt;ROWS;row++)</p>
-<p>{</p>
-<p>for(ch=(‘A’+row);ch&lt;(‘A’+CHARS);ch++)</p>
-<p>printf(“%c”,ch);</p>
-<p>printf(“\n”);</p>
-<p>}</p>
-<p>}</p>
-<p>输出为：</p>
-<p>ABCDEF</p>
-<p>BCDEF</p>
-<p>CDEF</p>
-<p>DEF</p>
-<p>EF</p>
-<p>F</p>
-<p>在这里说明一下const.</p>
-<p>const限定符(只读)，例如：const int a=12;//表示a值为12，且在程序中不可更改。</p>
-<p>Int * const p=&a;//p不变</p>
-<p>Const int * p=&amp;a//a不变</p>
-<p>*p为指针变量，在之后的学习中会学到，是C语言中非常重要的一部分。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1820,7 +1813,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
