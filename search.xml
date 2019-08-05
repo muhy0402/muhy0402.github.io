@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[带参函数]]></title>
+    <url>%2F2019%2F08%2F05%2F%E5%B8%A6%E5%8F%82%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[#include &lt;stdio.h&gt; #define NAME “zhangsan” #define SPACE ‘ ‘ #define WIDTH 40 void show(char ch,int n); void main() { show(SPACE,12); printf(“%s”,NAME); printf(“\n”); show(‘*’,WIDTH); printf(“\n”); } void show(char ch,int n) { int count; for(count=1;count&lt;=n;count++) putchar(ch); } 在该程序中则使用了带参函数，show()函数有两个形式参数即char类型的变量ch和int类型的变量n； 在主函数调用show()函数时第一次用了实际参数SPACE和12，第二次用了实际参数‘*’和WIDTH; 同样带参函数和不带参函数在声明和调用时都要加分号，在定义时与主函数相似。 在自定义的函数头部即void show(char ch,int n)圆括号内部每个变量都必须注明类型 如void show(int x,y,z),这个为无效函数头；必须改为void show(int x,int y,int z)，或者改为： void show(x,y,z) int x,y,z;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[创建并使用简单函数]]></title>
     <url>%2F2019%2F08%2F05%2F%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%AE%80%E5%8D%95%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[#include “stdio.h” void age(void); void main() { char name[20]; gets(name); puts(name); age(); } void age(void) { int x; printf(“请输入年龄：”); scanf(“%d”,&amp;x); printf(“age=%d\n”,x); } 在该程序中，调用了age()函数。 自定义函数要注意，包括函数类型，函数名，圆括号函数返回类型。 在调用函数和声明函数时要记得有分号，在定义函数时与写主函数是一样的，需要大家下去多加练习。 函数的使用对于整个程序而言是十分重要的，在写大程序时思路清晰，一个函数一个内容，在编写和修改时都十分方便。]]></content>

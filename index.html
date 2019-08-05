@@ -265,6 +265,153 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/带参函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="deer">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="travelers">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/05/带参函数/" itemprop="url">带参函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-05T16:04:34+08:00">
+                2019-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+     
+         
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#include &lt;stdio.h&gt;</p>
+<p>#define NAME “zhangsan”</p>
+<p>#define SPACE ‘ ‘</p>
+<p>#define WIDTH 40</p>
+<p>void show(char ch,int n);</p>
+<p>void main()</p>
+<p>{</p>
+<p>show(SPACE,12);</p>
+<p>printf(“%s”,NAME);</p>
+<p>printf(“\n”);</p>
+<p>show(‘*’,WIDTH);</p>
+<p>printf(“\n”);</p>
+<p>}</p>
+<p>void show(char ch,int n)</p>
+<p>{</p>
+<p>int count;</p>
+<p>for(count=1;count&lt;=n;count++)</p>
+<p>putchar(ch);</p>
+<p>}</p>
+<p>在该程序中则使用了带参函数，show()函数有两个形式参数即char类型的变量ch和int类型的变量n；</p>
+<p>在主函数调用show()函数时第一次用了实际参数SPACE和12，第二次用了实际参数‘*’和WIDTH;</p>
+<p>同样带参函数和不带参函数在声明和调用时都要加分号，在定义时与主函数相似。</p>
+<p>在自定义的函数头部即void show(char ch,int n)圆括号内部每个变量都必须注明类型</p>
+<p>如void show(int x,y,z),这个为无效函数头；必须改为void show(int x,int y,int z)，或者改为：</p>
+<p>void show(x,y,z)</p>
+<p>int x,y,z;</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/创建并使用简单函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1616,151 +1763,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/计算一个数的整数次幂/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="deer">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="travelers">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/30/计算一个数的整数次幂/" itemprop="url">计算一个数的整数次幂</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T15:17:26+08:00">
-                2019-07-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-     
-         
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>不直接使用pow()函数计算一个数的整数次幂</p>
-<p>#include “stdio.h”</p>
-<p>double power(double n,int p);</p>
-<p>void main()</p>
-<p>{</p>
-<p>double x,xpow;</p>
-<p>int exp;</p>
-<p>printf(“输入一个数及要求指数幂\n”);</p>
-<p>while(scanf(“%lf%d”,&amp;x,&amp;exp)==2)</p>
-<p>{</p>
-<p>xpow=power(x,exp);</p>
-<p>printf(“%lf的%d指数幂结果为%.3lf\n”,x,exp,xpow);</p>
-<p>}</p>
-<p>}</p>
-<p>double power(double n,int p)</p>
-<p>{</p>
-<p>double pow=1;</p>
-<p>int i;</p>
-<p>for(i=1;i&lt;=p;i++)</p>
-<p>pow*=n;</p>
-<p>return pow;</p>
-<p>}</p>
-<p>注意：Scanf()函数的返回值：返回成功读取的项数。如果没有读取任何项，且需要读取一个数字而用户却输入一个非数值字符串，scanf()便返回0；</p>
-<p>Printf()函数返回值：返回打印字符的个数</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1813,7 +1815,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

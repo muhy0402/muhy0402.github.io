@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="令程序读入一个字符，两个数值，打印出某行某列个该字符。 #include “stdio.h” void display(char cr,int lines,int width); void main() { char ch; int rows,cols; while((ch=getchar())!=’\n’); { if(scanf(“%d %d”,&amp;amp;rows,&amp;amp;cols)!=2)">
+<meta name="description" content="#include &amp;lt;stdio.h&amp;gt; #define NAME “zhangsan” #define SPACE ‘ ‘ #define WIDTH 40 void show(char ch,int n); void main() { show(SPACE,12); printf(“%s”,NAME); printf(“\n”); show(‘*’,WIDTH); printf(“\n">
 <meta name="keywords" content="computer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="混合数值和字符输入">
-<meta property="og:url" content="http://yoursite.com/2019/08/04/混合数值和字符输入/index.html">
+<meta property="og:title" content="带参函数">
+<meta property="og:url" content="http://yoursite.com/2019/08/05/带参函数/index.html">
 <meta property="og:site_name" content="travelers">
-<meta property="og:description" content="令程序读入一个字符，两个数值，打印出某行某列个该字符。 #include “stdio.h” void display(char cr,int lines,int width); void main() { char ch; int rows,cols; while((ch=getchar())!=’\n’); { if(scanf(“%d %d”,&amp;amp;rows,&amp;amp;cols)!=2)">
+<meta property="og:description" content="#include &amp;lt;stdio.h&amp;gt; #define NAME “zhangsan” #define SPACE ‘ ‘ #define WIDTH 40 void show(char ch,int n); void main() { show(SPACE,12); printf(“%s”,NAME); printf(“\n”); show(‘*’,WIDTH); printf(“\n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-04T12:37:42.114Z">
+<meta property="og:updated_time" content="2019-08-05T08:38:02.985Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="混合数值和字符输入">
-<meta name="twitter:description" content="令程序读入一个字符，两个数值，打印出某行某列个该字符。 #include “stdio.h” void display(char cr,int lines,int width); void main() { char ch; int rows,cols; while((ch=getchar())!=’\n’); { if(scanf(“%d %d”,&amp;amp;rows,&amp;amp;cols)!=2)">
+<meta name="twitter:title" content="带参函数">
+<meta name="twitter:description" content="#include &amp;lt;stdio.h&amp;gt; #define NAME “zhangsan” #define SPACE ‘ ‘ #define WIDTH 40 void show(char ch,int n); void main() { show(SPACE,12); printf(“%s”,NAME); printf(“\n”); show(‘*’,WIDTH); printf(“\n">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/04/混合数值和字符输入/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/05/带参函数/">
 
 
 
 
 
-  <title>混合数值和字符输入 | travelers</title>
+  <title>带参函数 | travelers</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/04/混合数值和字符输入/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/带参函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="deer">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">混合数值和字符输入</h1>
+          <h1 class="post-title" itemprop="name headline">带参函数</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-04T20:09:51+08:00">
-                2019-08-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-05T16:04:34+08:00">
+                2019-08-05
               </time>
             
 
@@ -337,63 +337,32 @@
       
 
       
-        <p>令程序读入一个字符，两个数值，打印出某行某列个该字符。</p>
-<p>#include “stdio.h”</p>
-<p>void display(char cr,int lines,int width);</p>
+        <p>#include &lt;stdio.h&gt;</p>
+<p>#define NAME “zhangsan”</p>
+<p>#define SPACE ‘ ‘</p>
+<p>#define WIDTH 40</p>
+<p>void show(char ch,int n);</p>
 <p>void main()</p>
 <p>{</p>
-<p>char ch;</p>
-<p>int rows,cols;</p>
-<p>while((ch=getchar())!=’\n’);</p>
+<p>show(SPACE,12);</p>
+<p>printf(“%s”,NAME);</p>
+<p>printf(“\n”);</p>
+<p>show(‘*’,WIDTH);</p>
+<p>printf(“\n”);</p>
+<p>}</p>
+<p>void show(char ch,int n)</p>
 <p>{</p>
-<p>if(scanf(“%d %d”,&amp;rows,&amp;cols)!=2)</p>
-<p>break;</p>
-<p>display(ch,rows,cols);</p>
-<p>while(getchar()!=’\n’)</p>
-<p>continue;</p>
+<p>int count;</p>
+<p>for(count=1;count&lt;=n;count++)</p>
+<p>putchar(ch);</p>
 <p>}</p>
-<p>printf(“Bye.\n”);</p>
-<p>}</p>
-<p>void display(char cr,int lines,int width)</p>
-<p>{</p>
-<p>int row,col;</p>
-<p>for(row=1;row&lt;=lines;row++)</p>
-<p>{</p>
-<p>for(col=1;col&lt;=width;col++)</p>
-<p>putchar(cr);</p>
-<p>putchar(“\n”);</p>
-<p>}</p>
-<p>}</p>
-<p>在该程序中，只要正确输入两个数值，就会打印出相应的字符；、</p>
-<p>同时该程序灵活的使用了break和continue语句，解决了程序只能运行一次的问题。</p>
-<p>程序只能运行一次是什么问题呢？</p>
-<p>#include “stdio.h”</p>
-<p>void display(char cr,int lines,int width);</p>
-<p>void main()</p>
-<p>{</p>
-<p>char ch;</p>
-<p>int rows,cols;</p>
-<p>while((ch=getchar())!=’\n’);</p>
-<p>{</p>
-<p>scanf(“%d %d”,&amp;rows,&amp;cols)</p>
-<p>display(ch,rows,cols);</p>
-<p>}</p>
-<p>printf(“Bye.\n”);</p>
-<p>}</p>
-<p>void display(char cr,int lines,int width)</p>
-<p>{</p>
-<p>int row,col;</p>
-<p>for(row=1;row&lt;=lines;row++)</p>
-<p>{</p>
-<p>for(col=1;col&lt;=width;col++)</p>
-<p>putchar(cr);</p>
-<p>putchar(“\n”);</p>
-<p>}</p>
-<p>}</p>
-<p>上面这个程序看起来也没什么问题，但是当你运行它的时候，问题就出现了</p>
-<p>这个程序只能运行一次，当你想输入第二组字符和数值时程序会直接退出。</p>
-<p>当你将一组字符和数字输入完成后，会点击回车，这个换行符就出现问题了。</p>
-<p>scanf()函数把这个换行符留在输入队列中。和scanf()不同的是，getchar()不会跳过换行符，所以在进行第二组的时候，getchar()直接读取换行符，然后将其赋给ch，从while循环就退出程序。</p>
+<p>在该程序中则使用了带参函数，show()函数有两个形式参数即char类型的变量ch和int类型的变量n；</p>
+<p>在主函数调用show()函数时第一次用了实际参数SPACE和12，第二次用了实际参数‘*’和WIDTH;</p>
+<p>同样带参函数和不带参函数在声明和调用时都要加分号，在定义时与主函数相似。</p>
+<p>在自定义的函数头部即void show(char ch,int n)圆括号内部每个变量都必须注明类型</p>
+<p>如void show(int x,y,z),这个为无效函数头；必须改为void show(int x,int y,int z)，或者改为：</p>
+<p>void show(x,y,z)</p>
+<p>int x,y,z;</p>
 
       
     </div>
@@ -418,8 +387,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/04/编程用-显示出三角形/" rel="next" title="编程用*显示出三角形">
-                <i class="fa fa-chevron-left"></i> 编程用*显示出三角形
+              <a href="/2019/08/05/创建并使用简单函数/" rel="next" title="创建并使用简单函数">
+                <i class="fa fa-chevron-left"></i> 创建并使用简单函数
               </a>
             
           </div>
@@ -427,10 +396,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/05/getchar-函数/" rel="prev" title="getchar()函数">
-                getchar()函数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
