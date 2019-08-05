@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-04T12:36:20.481Z</updated>
+  <updated>2019-08-05T07:28:51.463Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>getchar()函数</title>
+    <link href="http://yoursite.com/2019/08/05/getchar-%E5%87%BD%E6%95%B0/"/>
+    <id>http://yoursite.com/2019/08/05/getchar-函数/</id>
+    <published>2019-08-05T07:23:08.674Z</published>
+    <updated>2019-08-05T07:28:51.463Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;getchar()函数把每个字符解释成一个字符编码。许多程序使用getchar()逐字符读取输入，通常，系统使用行缓冲输入，即当用户按下Enter键后数据才会被传入给程序。而按下Enter键后同样会传入一个换行符，在某些时候，这个换行符会是程序出现问题，所以，我们要学会如何
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>混合数值和字符输入</title>
     <link href="http://yoursite.com/2019/08/04/%E6%B7%B7%E5%90%88%E6%95%B0%E5%80%BC%E5%92%8C%E5%AD%97%E7%AC%A6%E8%BE%93%E5%85%A5/"/>
     <id>http://yoursite.com/2019/08/04/混合数值和字符输入/</id>
     <published>2019-08-04T12:09:51.567Z</published>
-    <updated>2019-08-04T12:36:20.481Z</updated>
+    <updated>2019-08-04T12:37:42.114Z</updated>
     
     <summary type="html">
     
